@@ -1,5 +1,32 @@
+
 h1{
     color: blueviolet;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
+}
+
+h2{
+    color: rgb(43, 205, 226);
+    font-family: 'Times New Roman', Times, serif
+    font-size: large;
+}
+
+h1.title{
+    color: rgb(18, 116, 29);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 40px;
+}
+
+h2.title{
+    color: rgb(56, 27, 223);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 40px;
+}
+#main {
+    background-color:bisque ;
+    width: 600px;
+    height: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    text-align: center;
 }
