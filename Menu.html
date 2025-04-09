@@ -2,48 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <style>
+
+    body {
+      background-image: url('https://plus.unsplash.com/premium_photo-1664205766188-56347f35c9af?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin-top: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+    }
+
+    .section-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      width: 80%;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .section-box h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .section-box p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .section-box img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 
 <body>
-    <center>
-        <h1>Menu</h1>
-    
-    
-        <nav>
-                <li class="main">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="main">
-                    <a href="Menu.html">Menu</a>
-                </li>
-                <li class="main">
-                    <a href="Collection.html">Collection</a>
-                </li>
-                <li class="main">
-                    <a href="contact.html">Contact Us</a>
-                </li>
-        </nav>
-    
-    
-        <h2>🍞 Bread</h2>
-        <img height="300" width="300" src="./1.Bread.jpg">
-       
-        <h2>🎂 Cake</h2>
-        <img height="300" width="300" src="./2.Cake.avif">
+  <div class="overlay"></div>
 
-        <h2>🥐 Pastry</h2>
-        <img height="400" width="300" src="./3.Pastry.jpg">
+  <h1 class="title">Menu</h1>
 
-        <h2>🍹 Juice</h2>
-        <img height="400" width="300" src="./4.Juice.avif">
-        <ul>
-            
-        </ul>
-    </center>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="section-box">
+    <h2 style="color: #8B4513;">🍞 Bread</h2>
+    <img src="./1.Bread.jpg" alt="Bread" />
+    <p>Our freshly baked breads are made daily with premium flour, bringing you soft, fluffy textures and rich, golden crusts.</p>
+  </div>
+  
+  <div class="section-box">
+    <h2 style="color: #D87093;">🎂 Cake</h2>
+    <img src="./2.Cake.avif" alt="Cake" />
+    <p>From birthdays to weddings, our cakes are crafted with love and creativity – perfect for every celebration.</p>
+  </div>
+  
+  <div class="section-box">
+    <h2 style="color: #DAA520;">🥐 Pastry</h2>
+    <img src="./3.Pastry.jpg" alt="Pastry" />
+    <p>Delicate layers of buttery dough filled with sweet or savory goodness – a true delight in every bite.</p>
+  </div>
+  
+  <div class="section-box">
+    <h2 style="color: #FF8C00;">🍹 Juice</h2>
+    <img src="./4.Juice.avif" alt="Juice" />
+    <p>Freshly squeezed juices made from real fruits – refreshing, healthy, and packed with vitamins.</p>
+  </div>
 </body>
 
 </html>

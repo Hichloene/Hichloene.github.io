@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylessheet" href=".css/styles.css">
-    <title>
-       SongHuong
-    </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>SongHuong</title>
     <style>
-body {
-  background-image: url('https://plus.unsplash.com/premium_photo-1664205766188-56347f35c9af?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-position: center;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d1f6f6;
+            background-image: url('https://plus.unsplash.com/premium_photo-1664205766188-56347f35c9af?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 5em;
+        }
+
+        #main {
+            background: #e0f665;
+            width: 700px;
+            border: 10px solid white;
+            font-weight: bolder;
+            border-radius: 15px;
+            padding: 15px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #main p {
+            color: rgb(9, 15, 60);
+        }
+
+        table {
+            background-color: #eed0a9;
+            width: 60%;
+            margin: 30px auto;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #FFA07A;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid #FF7F50;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            color: #000;
+        }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a> | 
-        <a href="Menu.html">Menu</a> |
-        <a href="Collection.html">Collection</a> |
-        <a href="mailto: hongthanhhuyen.nguyen@edu.sait.ca">Contact us</a> |
-        
+        <a href="menu.html">Menu</a> |
+        <a href="collection.html">Collection</a> |
+        <a href="mailto:hongthanhhuyen.nguyen@edu.sait.ca">Contact us</a>
     </nav>
-    <h1 class="title">  Song Huong Bakery </h1>
-    <div id="main" style="background: #e0f665; width: 700px;
-    border: 10px solid rgb(255, 255, 255); 
-    font-weight: bolder; border-radius: 15px; padding: 15px;
-    margin: auto; text-align: center;">
-    <p style="color: rgb(19, 31, 119);"> Song Huong Bakery is a cozy and welcoming bake shop that specializes in freshly baked pastries, cakes, and artisan bread made with high-quality ingredients. Whether you're craving a sweet treat, a custom cake for a special occasion, or a warm loaf of bread, we offer a delightful selection to satisfy every taste. With a passion for baking and a commitment to excellence, Song Huong brings homemade goodness to every bite.
-    </p>
-    </div>
-<!-- Additional content goes here -->
-</body>
-</html>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f8f8f8; }
-        h1 { color: rgb(255, 255, 255); text-align: center; font-size:5em ; }
-    </style>
-    </div>
-   <br>
-    <table border="1" style="background-color: #eed0a9; width: 60%; margin: auto; text-align: left; border-collapse: collapse;">
-        <tr style="background-color: #FFA07A; color: white;">
-            <th style="padding: 10px;">Information</th>
-            <th style="padding: 10px;">Details</th>
+
+    <h1 class="title">Song Huong Bakery</h1>
+
+    <main id="main">
+        <p>Song Huong Bakery is a cozy and welcoming bake shop that specializes in freshly baked pastries, cakes, and artisan bread made with high-quality ingredients. Whether you're craving a sweet treat, a custom cake for a special occasion, or a warm loaf of bread, we offer a delightful selection to satisfy every taste. With a passion for baking and a commitment to excellence, Song Huong brings homemade goodness to every bite.</p>
+    </main>
+
+    <table>
+        <tr>
+            <th>Information</th>
+            <th>Details</th>
         </tr>
         <tr>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Store Name</td>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Song Huong Bakery</td>
+            <td>Store Name</td>
+            <td>Song Huong Bakery</td>
         </tr>
         <tr>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Established</td>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">2024</td>
+            <td>Established</td>
+            <td>2024</td>
         </tr>
         <tr>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Menu</td>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Bread, Cake, Pastry, Ice Cream, Juice, Coffee.</td>
+            <td>Menu</td>
+            <td>Bread, Cake, Pastry, Ice Cream, Juice, Coffee.</td>
         </tr>
         <tr>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Collection</td>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Birthday, Wedding, Anniversary.</td>
+            <td>Collection</td>
+            <td>Birthday, Wedding, Anniversary.</td>
         </tr>
         <tr>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">Opening Hours</td>
-            <td style="padding: 8px; border: 1px solid #FF7F50;">9:00 AM - 9:00 PM (Mon-Sat), 9:00 AM - 7:00 PM (Sun)</td>
+            <td>Opening Hours</td>
+            <td>9:00 AM - 9:00 PM (Mon-Sat), 9:00 AM - 7:00 PM (Sun)</td>
         </tr>
     </table>
-      
 </body>
-
 </html>
-
-
-
-
-
