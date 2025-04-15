@@ -1,6 +1,3 @@
-function changeTheme() {
-    document.body.style.backgroundColor = "#fbe8eb";
-}
 
 function showMessage() {
     alert("Welcome to Song Huong Bakery!");
@@ -24,10 +21,10 @@ function showMany() {
     }
 }
 
-function changeColor() {
-    const colors = ["#FF6347", "#2E8B57", "#8A2BE2", "#FF1493"];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.getElementById("main").style.color = randomColor;
+function changeColor() 
+{
+    document.getElementById("main").style.color="green";
+    document.getElementById("main").style.backgroundColor="yellow";
 }
 
 function changeToJuice() {
