@@ -1,62 +1,41 @@
-
-function showMessage()
-{
-    let name = "James";
-    let age = 21;
-    let bonus = age + 5;
-    let school = "SADT";
-    let message = "Hey "+ name+", your age is "+ age +" You are qualified to be at "+ school +". You have got a bonus";
-    alert(message);
+function changeTheme() {
+    document.body.style.backgroundColor = "#fbe8eb";
 }
 
-function checkAge()
-{
-    let age = 19;
-    if(age>=18)
-    {
-        alert("Hey you can enter the party. You are old enough")
-    }
-    else
-    {
-        alert("Hey, you are too young.")
+function showMessage() {
+    alert("Welcome to Song Huong Bakery!");
+}
+
+function checkAge() {
+    const age = prompt("Please enter your age:");
+    if (age >= 18) {
+        alert("Welcome to the party!");
+    } else {
+        alert("Sorry, you must be at least 18.");
     }
 }
 
-function showMany()
-{
-    for(let i=1;i<=10;i=i+1)
-    {
-        alert("Don't close me now! You clicked me "+1 +" times");
-    } 
+function showMany() {
+    const answer = confirm("Do you really want to close?");
+    if (answer) {
+        alert("Okay, closing...");
+    } else {
+        alert("Phew! Glad you stayed.");
+    }
 }
 
-function changeColor()
-{
-    document.getElementById("main").style.color="green";
-    document.getElementById("main").style.backgroundColor="yellow";
+function changeColor() {
+    const colors = ["#FF6347", "#2E8B57", "#8A2BE2", "#FF1493"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.getElementById("main").style.color = randomColor;
 }
 
-function changeToJuice()
-{
-    document.getElementById("cakejuice"). src="https://njaes.rutgers.edu/fs542/fs542-main-1.jpg";
+function changeToJuice() {
+    document.getElementById("cakejuice").src = "https://www.spicehaven.ca/wp-content/uploads/2024/03/Fresh-Fruit-Juice-img.jpg";
+    document.getElementById("cakejuice").alt = "Fresh Juice";
 }
 
-function changeToCake()
-{
-    document.getElementById("cakejuice"). src="https://mccormick.widen.net/content/ghspdwly3h/original/cake24823_800x800.jpg"; height=300; width=300;
-}
-
-function changeTheme()
-{
-    document.getElementById("cakejuice"). src="https://preppykitchen.com/wp-content/uploads/2017/07/Ultimate-Funfetti-feature.jpg"; height=300; width=300;
-}
-
-function changeInner()
-{
-    document.getElementById("OkButton"). src="https://preppykitchen.com/wp-content/uploads/2017/07/Ultimate-Funfetti-feature.jpg"; height=300; width=300;
-}
-
-function hoverFunction()
-{
-    
+function changeToCake() {
+    document.getElementById("cakejuice").src = "https://preppykitchen.com/wp-content/uploads/2017/07/Ultimate-Funfetti-feature.jpg";
+    document.getElementById("cakejuice").alt = "Funfetti Cake";
 }

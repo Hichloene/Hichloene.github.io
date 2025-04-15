@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SongHuong</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script defer src="./script/script.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,6 +70,23 @@
             font-weight: bold;
             color: #000;
         }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #ffcccb;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
@@ -106,5 +129,17 @@
             <td>9:00 AM - 9:00 PM (Mon-Sat), 9:00 AM - 7:00 PM (Sun)</td>
         </tr>
     </table>
+
+    <div style="text-align: center;">
+        <button onclick="changeTheme()">Change Theme</button>
+        <button onclick="showMessage()">Welcome Message</button>
+        <button onclick="checkAge()">Enter the Party</button>
+        <button onclick="showMany()">Close Prompt</button>
+        <button onclick="changeColor()">Change Text Color</button>
+        <br />
+        <img id="cakejuice" src="https://preppykitchen.com/wp-content/uploads/2017/07/Ultimate-Funfetti-feature.jpg" alt="Cake Image">
+        <button onclick="changeToJuice()">Juice</button>
+        <button onclick="changeToCake()">Cake</button>
+    </div>
 </body>
 </html>
